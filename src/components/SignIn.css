@@ -1,0 +1,24 @@
+.signin {
+  text-align: center;
+  padding: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.signin__header {
+  margin: 2em 0;
+  font-size: 2em;
+}
+
+.signin__google {
+  padding: 1em;
+  font-size: 1rem;
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  background: #dc453a;
+  color: white;
+  transition: opacity 0.5s;
+}
