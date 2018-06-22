@@ -3,7 +3,7 @@ import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import _ from "lodash";
 import * as actions from "../actions";
-import ToDoListItem from "./ToDoListItem";
+import ToDoItem from "./ToDoItem";
 import Preloader from "./Preloader";
 
 class ToDo extends Component {
@@ -36,7 +36,7 @@ class ToDo extends Component {
     let { data } = this.props;
     
     const toDos = _.map(data, (value, key) => {
-      return <ToDoListItem key={key} todoId={key} todo={value} />;
+      return <ToDoItem key={key} todoId={key} todo={value} />;
     });
 
     if (!_.isEmpty(toDos)) {
